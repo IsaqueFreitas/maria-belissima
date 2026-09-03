@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Manrope:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-background text-on-surface font-manrope antialiased selection:bg-tertiary/30;
+}
+
+/* Selection */
+::selection {
+  @apply bg-tertiary/30 text-on-surface;
+}
+
+::-moz-selection {
+  @apply bg-tertiary/30 text-on-surface;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-container;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-outline-variant rounded-full hover:bg-outline;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-300;
+}
+
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-tertiary;
+}
+
+/* Buttons */
+button {
+  @apply transition-all duration-300 font-manrope;
+}
+
+button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-tertiary;
+}
+
+/* Images */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bodoni text-on-surface leading-tight;
+}
+
+.brand-logo {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    @apply animate-none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.shadow-ambient {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
