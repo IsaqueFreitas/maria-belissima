@@ -75,7 +75,7 @@ const AboutSection: React.FC = () => {
               whileHover={{ borderColor: 'rgba(229, 193, 146, 0.3)' }}
             >
               <span className="absolute -top-4 -left-4 text-[100px] text-surface-container-low opacity-40 rotate-180 font-bodoni text-3xl leading-none">
-                "
+                &quot;
               </span>
               <p className="font-headline-md text-headline-md text-on-surface relative z-10 italic text-balance font-bodoni">
                 {CONTENT.about.quote}

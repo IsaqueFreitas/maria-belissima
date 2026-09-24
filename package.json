@@ -24,6 +24,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "@typescript-eslint/parser": "^8.70.1",
     "@vitejs/plugin-react": "^6.1.1",
     "autoprefixer": "^10.5.4",
     "eslint": "^9.39.5",
@@ -34,7 +35,7 @@
     "prettier": "^3.9.6",
     "tailwindcss": "^3.4.19",
     "ts-node": "^10.9.2",
-    "typescript": "^7.0.2",
+    "typescript": "^5.9.3",
     "vite": "^8.2.2"
   },
   "dependencies": {

@@ -9,8 +9,6 @@ interface GalleryItemProps {
 }
 
 const GalleryItem: React.FC<GalleryItemProps> = ({ image, onClick }) => {
-  const spanClasses = image.span ? `col-span-${image.span === 'col-2' ? '2' : '1'} row-span-${image.span === 'row-2' ? '2' : '1'}` : '';
-
   return (
     <motion.div
       className={`overflow-hidden group shadow-lg border border-outline-variant/10 cursor-pointer ${

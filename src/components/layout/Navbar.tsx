@@ -4,16 +4,10 @@ import { Menu, X } from 'lucide-react';
 import { CONTENT } from '../../data/content';
 import { getWhatsAppUrl } from '../../data/contacts';
 import Button from '../ui/Button';
-import { useScrollDirection } from '../../hooks/useScrollDirection';
 
-interface NavbarProps {
-  transparent?: boolean;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
+const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const scrollDirection = useScrollDirection();
 
   useEffect(() => {
     const handleScroll = () => {
