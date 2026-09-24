@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  @apply bg-background text-on-surface font-manrope antialiased selection:bg-tertiary/30;
+  @apply bg-background text-on-surface font-manrope antialiased selection:bg-tertiary/30 overflow-x-hidden;
 }
 
 /* Selection */
@@ -98,4 +98,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .backdrop-blur-md {
   backdrop-filter: blur(12px);
+}
+
+.gallery-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
 }

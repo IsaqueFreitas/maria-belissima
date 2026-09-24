@@ -20,6 +20,7 @@ dist-ssr
 # IDE
 .vscode
 .idea
+.github
 *.suo
 *.ntvs*
 *.njsproj

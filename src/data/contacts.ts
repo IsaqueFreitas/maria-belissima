@@ -17,8 +17,8 @@ export const CONTACTS = {
 
 // Mensagens pré-preenchidas do WhatsApp
 export const WHATSAPP_MESSAGES = {
-  schedule: 'Olá Paulo! Gostaria de agendar um horário para meus cachos.',
-  inquiry: 'Olá Paulo! Gostaria de saber mais sobre seus serviços.',
+  schedule: 'Olá Rick! Gostaria de agendar um horário para meus cachos.',
+  inquiry: 'Olá Rick! Gostaria de saber mais sobre seus serviços.',
 };
 
 // Criar URL do WhatsApp

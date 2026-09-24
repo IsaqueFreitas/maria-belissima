@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import { Navbar, Footer } from './components/layout';
-import { HeroSection, AboutSection, ServicesSection, GallerySection } from './components/sections';
+import {
+  HeroSection,
+  AboutSection,
+  ServicesSection,
+  GallerySection,
+  TestimonialsSection,
+} from './components/sections';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -16,6 +22,7 @@ const App: React.FC = () => {
         <AboutSection />
         <ServicesSection />
         <GallerySection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </div>

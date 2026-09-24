@@ -4,8 +4,7 @@ import { CONTENT } from '../../data/content';
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer } from '../../lib/animations';
 
 const AboutSection: React.FC = () => {
-  const aboutImageUrl =
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuCRv6kKgWi_56GhXNA9x2wLq_d2NZzAV8SoNmJR9CXBMS-L4IPnxIDul7J7q3m0KFMU-ln44RBFOWDvgtJnwuEkPFYBqw-PgpP8DecEy80E2LTtThAhop5EnxuE0WGhMlgriFY904bMsdSzKh_SXkZ15gAgtHiRW0JUi8tlSrHNpYzp5T-Ms4EkYvevTtRrfntWJ0mz61X2Pf8WjyE1wyMkA2h8_xsTSxcG9uukPGCX8f7stJagoNykrw';
+  const aboutImageUrl = '/rick-vieira.png';
 
   return (
     <section className="py-section-gap bg-secondary-fixed" id="sobre">
@@ -23,14 +22,14 @@ const AboutSection: React.FC = () => {
             variants={slideInLeft}
           >
             <motion.div
-              className="aspect-[4/5] rounded-none overflow-hidden relative z-10 border border-outline-variant/10"
+              className="aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5] rounded-none overflow-hidden relative z-10 border border-outline-variant/10"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.5 }}
             >
               <img
                 src={aboutImageUrl}
-                alt="Paulo Nunes - especialista em cabelos"
-                className="w-full h-full object-cover object-center"
+                alt="Rick Vieira - Especialista em Mechas e Cabelos Cacheados"
+                className="w-full h-full object-cover object-[center_20%]"
               />
             </motion.div>
             <motion.div

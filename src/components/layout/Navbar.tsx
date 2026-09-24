@@ -33,11 +33,11 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
         className={`${navBg} backdrop-blur-xl fixed top-0 w-full z-50 border-b ${borderColor} shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300`}
       >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-[auto_1fr_auto] items-center gap-4 md:gap-6 py-4 md:py-5">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] md:grid-cols-[auto_1fr_auto] items-center gap-4 md:gap-6 py-4 md:py-5">
             {/* Logo */}
             <a
               href="#"
-              className="brand-logo justify-self-start text-[1.8rem] md:text-[2.05rem] leading-none text-on-surface hover:text-tertiary transition-colors duration-300 whitespace-nowrap"
+              className="brand-logo justify-self-start text-[1.35rem] sm:text-[1.8rem] md:text-[2.05rem] leading-none text-on-surface hover:text-tertiary transition-colors duration-300 whitespace-nowrap min-w-0"
             >
               {CONTENT.navbar.logo}
             </a>

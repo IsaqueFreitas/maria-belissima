@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, MessageCircle } from 'lucide-react';
+import { Camera, MapPin, MessageCircle, Clock } from 'lucide-react';
 import { CONTENT } from '../../data/content';
 import { CONTACTS } from '../../data/contacts';
 import { staggerContainer, fadeInUp } from '../../lib/animations';
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </a>
           <p className="font-body-md text-body-md text-secondary flex items-center justify-center md:justify-start gap-2">
             <MapPin size={20} />
-            {CONTENT.footer.location}
+            {CONTENT.footer.location} <span className="mx-2 opacity-40">•</span> <Clock size={18} /> Seg a Sáb: 08h às 17h
           </p>
         </motion.div>
 
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             variants={fadeInUp}
             whileHover={{ x: 4 }}
           >
-            📷 Instagram
+            <Camera size={20} /> Instagram
           </motion.a>
           <motion.a
             href={CONTACTS.whatsapp.link}

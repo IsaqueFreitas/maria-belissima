@@ -11,13 +11,13 @@ const HeroSection: React.FC = () => {
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBrv7ucluHvpgwc65vld76akYnASzMZkt3p0edVVp3X7YrQiurNuD_qYvBRNPZxSeFt0bkKYrbEei0eXRko3RIYKXTBKna1THBJZOKB_T7NOUuUrEs0uNcQqAOXwYw-RfUo-z1i-Um7aQ6mTN9L-kiN2A3ElMouXyCLU8zn327j0f8APajtSLb4esqAU9bCdqDDGTz34zLshIn1OhbKket5NEg5sRt-R68TCZ2rKeIVr4M4zC3aNKsGOw';
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden py-section-gap bg-background pt-[160px]">
+    <section className="relative min-h-[680px] lg:min-h-[90vh] flex items-center overflow-hidden bg-background py-28 md:py-36 lg:py-section-gap">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImageUrl}
-          alt="Paulo Nunes Hair Studio Background"
-          className="w-full h-full object-cover object-center opacity-40 mix-blend-overlay"
+          alt="Cachos definidos no estúdio Maria Belíssima"
+          className="w-full h-full object-cover object-[58%_center] opacity-40 mix-blend-overlay md:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
       </div>
@@ -25,13 +25,13 @@ const HeroSection: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <motion.div
-          className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-gutter"
+          className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6 md:gap-gutter"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
         >
           <motion.div
-          className="col-span-4 md:col-span-6 lg:col-span-7 flex flex-col justify-center"
+          className="col-span-4 md:col-span-6 lg:col-span-7 flex flex-col justify-center max-w-3xl"
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
           {/* Title */}
           <motion.h1
             variants={fadeInUp}
-            className="font-display-lg text-headline-lg-mobile md:text-display-lg leading-tight text-on-surface mb-12 text-balance font-bodoni"
+            className="font-display-lg text-headline-lg-mobile md:text-display-lg leading-tight text-on-surface mb-8 text-balance font-bodoni"
           >
             Especialista em Valorizar a Beleza{' '}
             <span className="italic text-tertiary">{CONTENT.hero.naturalEmphasis}</span> dos Seus
@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
           {/* Description */}
           <motion.p
             variants={fadeInUp}
-            className="font-body-lg text-body-lg text-on-surface-variant mb-16 max-w-2xl leading-relaxed"
+            className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl leading-relaxed"
           >
             {CONTENT.hero.description}
           </motion.p>
@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
           {/* CTAs */}
           <motion.div
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row gap-6 items-start justify-between"
+            className="flex flex-col sm:flex-row gap-6 items-start"
           >
             <Button
               href={getWhatsAppUrl()}
@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
               href="#galeria"
               variant="outline"
               size="lg"
-              className="w-full sm:w-auto ml-auto"
+              className="w-full sm:w-auto"
             >
               {CONTENT.hero.secondaryCta}
             </Button>

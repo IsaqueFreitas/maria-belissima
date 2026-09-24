@@ -1,39 +1,54 @@
-import { LucideIcon, Scissors, Droplets, RotateCcw, Sparkles } from 'lucide-react';
+import { LucideIcon, Scissors, Droplets, Palette, Sparkles } from 'lucide-react';
 
 export interface Service {
   id: string;
   icon: LucideIcon;
   title: string;
   description: string;
+  price: string;
+  detail: string;
+  label: string;
 }
 
 export const SERVICES: Service[] = [
   {
-    id: 'dry-cut',
-    icon: Scissors,
-    title: 'Corte a Seco & Visagismo',
-    description:
-      'Análise facial e corte realizado no cabelo seco para respeitar o caimento natural, formato e grau de encolhimento dos cachos.',
-  },
-  {
-    id: 'nutrition',
-    icon: Droplets,
-    title: 'Nutrição & Hidratação',
-    description:
-      'Tratamentos profundos com produtos premium focados em devolver lipídios, água e vitalidade para fios opacos ou ressecados.',
-  },
-  {
-    id: 'transition',
-    icon: RotateCcw,
-    title: 'Transição Capilar',
-    description:
-      'Consultoria acolhedora e cortes estratégicos (Big Chop ou sutis) para quem deseja abandonar químicas e retornar ao natural.',
-  },
-  {
-    id: 'finishing',
+    id: 'highlights',
     icon: Sparkles,
-    title: 'Finalização & Definição',
+    title: 'Mechas',
     description:
-      'Técnicas de fitagem e finalização profissional para garantir cachos definidos, com volume na medida certa e sem frizz por dias.',
+      'Iluminação e tonalidade personalizadas para valorizar a textura, a forma e a vitalidade dos seus cabelos cacheados.',
+    price: 'R$ 400 a R$ 450',
+    detail: 'Duração aprox. 4 a 6 horas',
+    label: 'Personalizado',
+  },
+  {
+    id: 'treatment',
+    icon: Droplets,
+    title: 'Tratamento',
+    description:
+      'Nutrição e hidratação profunda para repor lipídios essenciais, devolver brilho e redefinir a elasticidade dos fios.',
+    price: 'A partir de R$ 90',
+    detail: 'Individual R$ 90 • Pacote (3x) R$ 250',
+    label: 'Nutrição',
+  },
+  {
+    id: 'cut',
+    icon: Scissors,
+    title: 'Corte',
+    description:
+      'Corte especializado a seco respeitando a curvatura, o volume natural e a arquitetura do seu rosto.',
+    price: 'A partir de R$ 80',
+    detail: 'Sem trat. R$ 80 • Com trat. R$ 150',
+    label: 'Design',
+  },
+  {
+    id: 'global',
+    icon: Palette,
+    title: 'Global',
+    description:
+      'Transformação completa de tonalidade e cobertura uniforme para renovar o visual com sofisticação, proteção e brilho intenso.',
+    price: 'R$ 650',
+    detail: 'Procedimento completo de cor',
+    label: 'Exclusivo',
   },
 ];
